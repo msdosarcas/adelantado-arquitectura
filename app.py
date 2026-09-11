@@ -39,6 +39,14 @@ st.markdown(
 
         .hero { min-height: 100vh; display: grid; grid-template-columns: 1.05fr .95fr; padding-top: 4.5rem; }
         .hero-copy { display: flex; flex-direction: column; justify-content: space-between; padding: 11vh 8vw 5rem 8vw; }
+        .hero-brand { width: min(100%, 31rem); margin-bottom: 3.2rem; text-align: left; }
+        .lockup-mark { display: block; width: min(14rem, 58vw); height: auto; margin: 0 0 1.5rem; }
+        .lockup-mark path { fill: none; stroke: var(--ink); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+        .lockup-mark polygon { fill: rgba(24, 24, 23, .2); stroke: none; }
+        .lockup-name { margin: 0; font-family: 'DM Mono', monospace; font-size: clamp(1.25rem, 2.8vw, 2.35rem); font-weight: 400;
+          letter-spacing: .19em; line-height: 1; white-space: nowrap; }
+        .lockup-sub { margin: .9rem 0 0; font-family: 'DM Mono', monospace; font-size: clamp(.66rem, 1.25vw, 1rem);
+          letter-spacing: .48em; line-height: 1; white-space: nowrap; }
         .eyebrow { font-size: .66rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
         .hero h1 { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(5rem, 10vw, 11rem); line-height: .78;
             letter-spacing: -.055em; max-width: 8ch; margin: 0; }
@@ -89,6 +97,10 @@ st.markdown(
             .nav { gap: .8rem; font-size: .58rem; }
             .hero { display: flex; flex-direction: column; padding-top: 4rem; }
             .hero-copy { min-height: 62vh; padding: 8vh 1.25rem 3rem; }
+            .hero-brand { margin-bottom: 2.5rem; }
+            .lockup-mark { width: 9.5rem; margin-bottom: 1.05rem; }
+            .lockup-name { font-size: clamp(.95rem, 5vw, 1.35rem); letter-spacing: .14em; }
+            .lockup-sub { margin-top: .7rem; font-size: .58rem; letter-spacing: .35em; }
             .hero h1 { font-size: clamp(4.8rem, 23vw, 7rem); }
             .hero-art { min-height: 58vh; margin: 0 1.25rem 1.25rem; }
             .section { padding: 5.5rem 1.25rem; }
@@ -122,6 +134,13 @@ st.markdown(
 
       <section class="hero" id="inicio">
         <div class="hero-copy">
+          <div class="hero-brand" aria-label="Adelantado Arquitectura">
+            <svg class="lockup-mark" viewBox="0 0 190 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Isotipo Adelantado">
+              <path d="M20 105 150 25v45l38 23v38"/><path d="M20 135 102 91"/><path d="M150 70 188 93"/><polygon points="108,50 140,69 140,119 108,119"/>
+            </svg>
+            <p class="lockup-name">ADELANTADO</p>
+            <p class="lockup-sub">ARQUITECTURA</p>
+          </div>
           <p class="eyebrow">Arquitectura · Interiorismo · Territorio</p>
           <h1>Espacios<br>con <em>carácter.</em></h1>
           <p class="hero-intro">Adelantado Arquitectura es un estudio independiente que transforma la forma de habitar en una experiencia serena, precisa y duradera.</p>
