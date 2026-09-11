@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-st.set_page_config(page_title="A Arquitectura", page_icon="✦", layout="wide")
+st.set_page_config(page_title="Adelantado Arquitectura", page_icon="✦", layout="wide")
 
 st.markdown(
     """
@@ -30,9 +30,10 @@ st.markdown(
             justify-content: space-between; align-items: center; padding: 1.35rem 4vw; font-size: .68rem;
             letter-spacing: .12em; text-transform: uppercase; }
         .topbar a { text-decoration: none; }
-        .topmark { display: flex; align-items: center; gap: .65rem; }
-        .topmark span { display: block; width: 22px; height: 16px; border: 1px solid currentColor;
-            clip-path: polygon(50% 0, 100% 100%, 0 100%); }
+        .topmark { display: flex; align-items: center; gap: .65rem; white-space: nowrap; }
+        .brand-logo { display: block; width: 30px; height: 22px; flex: 0 0 auto; }
+        .brand-logo path { fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+        .brand-logo rect { fill: currentColor; opacity: .14; stroke: none; }
         .nav { display: flex; gap: 2rem; }
         .nav a:hover { color: var(--accent); }
 
@@ -108,7 +109,12 @@ st.markdown(
     """
     <main class="site">
       <header class="topbar">
-        <a class="topmark" href="#inicio"><span></span> A / Arquitectura</a>
+        <a class="topmark" href="#inicio">
+          <svg class="brand-logo" viewBox="0 0 80 58" aria-label="Logo Adelantado Arquitectura" role="img">
+            <path d="M8 42 40 8l32 34"/><path d="M20 42V24h40v18"/><path d="M20 42h40"/><path d="M30 42V31h20v11"/><rect x="34" y="26" width="12" height="16"/>
+          </svg>
+          Adelantado / Arquitectura
+        </a>
         <nav class="nav" aria-label="Navegación principal">
           <a href="#estudio">Estudio</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a>
         </nav>
@@ -118,7 +124,7 @@ st.markdown(
         <div class="hero-copy">
           <p class="eyebrow">Arquitectura · Interiorismo · Territorio</p>
           <h1>Espacios<br>con <em>carácter.</em></h1>
-          <p class="hero-intro">A Arquitectura es un estudio independiente que transforma la forma de habitar en una experiencia serena, precisa y duradera.</p>
+          <p class="hero-intro">Adelantado Arquitectura es un estudio independiente que transforma la forma de habitar en una experiencia serena, precisa y duradera.</p>
         </div>
         <div class="hero-art"><span class="vertical-note">Casa en la sierra · Madrid · 2024</span></div>
       </section>
@@ -127,7 +133,7 @@ st.markdown(
         <div class="section-head"><h2 class="section-title">El estudio</h2><span class="section-number">01 — 04</span></div>
         <div class="manifesto">
           <p class="manifesto-lead">Diseñamos lo esencial para que cada lugar pueda contar su propia historia.</p>
-          <p class="manifesto-copy"><strong>A Arquitectura</strong> nace de una manera de mirar: escuchar el contexto, entender la materia y construir con intención. Trabajamos desde la escala doméstica hasta espacios colectivos, buscando siempre una belleza que no dependa de la tendencia.<br><br>La luz, la proporción y el tiempo son nuestras herramientas.</p>
+          <p class="manifesto-copy"><strong>Adelantado Arquitectura</strong> nace de una manera de mirar: escuchar el contexto, entender la materia y construir con intención. Trabajamos desde la escala doméstica hasta espacios colectivos, buscando siempre una belleza que no dependa de la tendencia.<br><br>La luz, la proporción y el tiempo son nuestras herramientas.</p>
         </div>
       </section>
 
@@ -155,9 +161,9 @@ st.markdown(
       <section class="section contact" id="contacto">
         <div class="section-head"><p class="eyebrow">¿Hablamos?</p><span class="section-number">04 — 04</span></div>
         <h2>Hagamos<br>algo <em>duradero.</em></h2>
-        <div class="contact-bottom"><span>Madrid · España<br>contacto@a-arquitectura.com</span><a class="contact-button" href="mailto:contacto@a-arquitectura.com">Iniciar conversación ↗</a></div>
+        <div class="contact-bottom"><span>Madrid · España<br>hola@adelantadoarquitectura.com</span><a class="contact-button" href="mailto:hola@adelantadoarquitectura.com">Iniciar conversación ↗</a></div>
       </section>
-      <footer class="footer"><span>© 2026 A Arquitectura</span><span>Instagram · LinkedIn</span></footer>
+      <footer class="footer"><span>© 2026 Adelantado Arquitectura</span><span>Instagram · LinkedIn</span></footer>
     </main>
     """,
     unsafe_allow_html=True,
